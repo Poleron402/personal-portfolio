@@ -1,0 +1,250 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Space Mono';
+  background-color: antiquewhite;
+}
+
+#myLinked_dark{
+  background-color: rgb(76, 84, 114);
+  height: 100%; 
+  width: 100%; 
+}
+#btn-light{
+  filter: brightness(0) invert(1);
+}
+#mode{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#mode:hover{
+  transform-origin: center
+}
+#mode>img{
+  width: 40px;
+}
+
+#navbar{
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: whitesmoke;
+  justify-content: space-around;
+
+}
+#navbar_dark{
+  border-bottom: 3px solid whitesmoke;
+  border-top: 3px solid whitesmoke;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: whitesmoke;
+  background-color: rgb(44, 48, 66);
+  justify-content: space-around;
+
+}
+.link{
+  text-decoration: none;
+  color: rgb(44, 48, 66);
+  box-sizing: border-box;
+  padding: 6px;
+}
+.link:hover{
+  background-color: rgb(44, 48, 66);
+  color: whitesmoke;
+  padding: 6px;
+  border-radius: 10px;
+}
+.link_dark{
+  text-decoration: none;
+  color:whitesmoke;
+  padding: 6px;
+  box-sizing: border-box;
+}
+.link_dark:hover{
+  background-color: whitesmoke;
+  color: rgb(44, 48, 66);
+  padding: 6px;
+  border-radius: 10px;
+}
+#main{
+  display: flex;
+  justify-content:space-evenly;
+}
+
+#my_info{
+  border: 4px solid black;
+  border-radius: 10px;
+  height: auto;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  position: relative;
+  background-color: whitesmoke;
+
+}
+#about{
+  padding-inline: 15px;
+}
+#my_info_dark{
+  border: 4px solid whitesmoke;
+  border-radius: 10px;
+  height: auto;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  position: relative;
+  background-color: rgb(44, 48, 66);
+  color: whitesmoke;
+}
+hr{
+  margin-top: -20px;
+}
+#cover_photo{
+  width: 100%;
+  height: 200px;
+  background-image: url('https://i.pinimg.com/550x/75/35/52/7535521b032ec739aae3f44e0b3ef38c.jpg');
+}
+#profile_photo{
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid whitesmoke;
+  transition: 300ms;
+  transition-timing-function: cubic-bezier(.36,.87,.56,1.04);
+}
+#profile_photo:hover{
+  transform: scale(1.1);
+}
+#avatar{
+  width: auto;
+  height: 100%; 
+  margin-left: -50px;
+}
+#myname{
+  margin-top: 120px;
+  margin-left: 15px;
+  font-size: 35px;
+}
+
+#side-info{
+  display: flex;
+  flex-direction: column;
+}
+#people{
+  border: 4px solid black;
+  border-radius: 10px;
+  min-height: 36vh;
+  width: 30vmin;
+  margin-top: 50px;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+#people_dark{
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  min-height: 36vh;
+  color: whitesmoke;
+  width: 30vmin;
+  margin-top: 50px;
+  background-color: rgb(44, 48, 66);
+  padding: 10px;
+}
+
+
+
+@media (max-width: 980px){
+  #myname{
+  font-size: 25px;
+  text-align: center;
+}
+  #main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #my_info, #my_info_dark{
+    border: 0px;
+    width: 98vw;
+    overflow: hidden;
+    align-items: center;
+  }
+  #profile_photo{
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  #people, #people_dark{
+    width: 90vw;
+
+  }
+}
+@media (max-width: 500px) {
+  /* #navbar, #navbar_dark{
+    bottom: 0!important;
+    top: initial;
+  } */
+  #myname{
+    font-size: 25px;
+    text-align: center;
+  }
+  .link-gh-dark{
+    content: url("./assets/github-mark-white.svg");
+    background-color: transparent;
+    width: 50px;
+  }
+  .link-gh-dark:hover{
+    padding: 5px;
+    content: url("./assets/github-mark.svg");
+  }
+  .link-gh{
+    content: url("./assets/github-mark.svg");
+    background-color: transparent;
+    width: 50px;
+  }
+  .link-gh:hover{
+    padding: 5px;
+    content: url("./assets/github-mark-white.svg");
+    background-color: rgb(44, 48, 66);
+  }
+  .link-in{
+    padding: 5px;
+    content: url("./assets/LI-In-Bug.png");
+    width: 50px;
+  }
+  .link-in-dark{
+    padding: 5px;
+    content: url("./assets/LI-In-Bug.png");
+    width: 50px;
+  }
+  .link-res{
+    padding: 5px;
+    content: url("./assets/resume-svgrepo-com.svg");
+    width: 50px;
+  }
+  .link-res-dark{
+    padding: 5px;
+    content: url("./assets/resume-svgrepo-com.svg");
+    width: 50px;
+    filter: brightness(0) invert(1);
+  }
+}
