@@ -32,7 +32,7 @@ function MyInfo({mode}){
         </div>
         <div id={mode?"people":"people_dark"}>
           Soft Skills: <br></br>
-          Leadership, adaptability, fast-learning.
+          Leadership, adaptability, fast-learning, team-work oriented.
         </div>
       </div>
     </div>

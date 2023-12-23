@@ -7,10 +7,11 @@ import './App.css'
 
 function App() {
 
-  const [mode, setMode] = useState(localStorage.getItem('mode'))
-  // useEffect(()=>{
-  //   localStorage.setItem({'mode':mode})
-  // }, [mode])
+  const [mode, setMode] = useState()
+  useEffect(()=>{
+    console.log(localStorage.getItem('mode'))
+    setMode(localStorage.getItem('mode'))
+  }, [])
   return (
     <>
     <div  id={mode?"myLinked":"myLinked_dark"}>

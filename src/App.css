@@ -224,7 +224,7 @@ hr{
   .link-gh:hover{
     padding: 5px;
     content: url("./assets/github-mark-white.svg");
-    background-color: rgb(44, 48, 66);
+    /* background-color: rgb(44, 48, 66); */
   }
   .link-in{
     padding: 5px;
@@ -246,5 +246,10 @@ hr{
     content: url("./assets/resume-svgrepo-com.svg");
     width: 50px;
     filter: brightness(0) invert(1);
+  }
+
+  .link-res-dark:hover{
+    content: url("./assets/resume-svgrepo-com.svg");
+    filter: brightness(1) invert(0);
   }
 }

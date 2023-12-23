@@ -1,9 +1,13 @@
 import dark from '../assets/dark.svg'
 import light from '../assets/light.svg'
 function Navbar({mode, setMode}){
+    const onClickHandler =()=>{
+        setMode(!mode)
+        localStorage.setItem("mode", mode+'')
+    }
     return(<>
     <div id={mode?"navbar":"navbar_dark"}>
-    <button id = "mode" onClick={()=>setMode(!mode)}>
+    <button id = "mode" onClick={()=>onClickHandler()}>
         {mode?<img src={dark} ></img>:<img src={light} id="btn-light"></img>}
     </button>   
         <a className={mode?"link link-in":"link_dark link-in-dark"} href="#">LinkedIN</a>
