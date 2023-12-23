@@ -7,15 +7,15 @@ import './App.css'
 
 function App() {
 
-  const [mode, setMode] = useState()
-  useEffect(()=>{
-    console.log(localStorage.getItem('mode'))
-    setMode(localStorage.getItem('mode'))
-  }, [])
+  const [mode, setMode] = useState(JSON.parse(localStorage.getItem("mode"))!== null ? JSON.parse(localStorage.getItem("mode")) : false)
+  const onClickHandler=()=>{
+    localStorage.setItem("mode", JSON.stringify(!mode))
+    setMode(JSON.parse(localStorage.getItem("mode")))
+  }
   return (
     <>
     <div  id={mode?"myLinked":"myLinked_dark"}>
-    <Navbar mode={mode} setMode = {setMode}/>
+    <Navbar mode={mode} setMode = {setMode} onClickHandler = {onClickHandler}/>
     
     <MyInfo mode = {mode}/>
     </div>

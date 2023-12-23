@@ -16,24 +16,30 @@ function MyInfo({mode}){
               assisting students in their assignments, which meant I had to learn and adapt to the material fast in order to be a resourceful TA. 
             <br></br>
             </p>
+            <h4>Recent school project video (<a href="https://github.com/Poleron402/sb" target="_blank" className={mode?"link":"link_dark"}>ChillJava GitHub</a>)</h4>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/Oz_JlrlvsZA"></iframe>
+            <h4>Recent personal project video (coming soon)</h4>
+            
         </div>
       </div>
       <div id="side_info">
         <div id={mode?"people":"people_dark"}>
           <p>Tech:
             <br></br>
-            Languages and frameworks: <br></br>
+            <u>Languages and frameworks:</u> <br></br>
             Python, JavaScript, Java, Django, React, Postgresql, RESTfulAPI, Room DB, Android Development, Agile
             <br></br>
-            Version Control: Git, GitHub
+            <u>Version Control:</u> Git, GitHub
             <br></br>
-            IDEs: Visual Studio Code, Sublime Text, Android Studio, Eclipse, IntelliJ IDEA
+            <u>IDEs:</u> Visual Studio Code, Sublime Text, Android Studio, Eclipse, IntelliJ IDEA
           </p>
+          
         </div>
         <div id={mode?"people":"people_dark"}>
-          Soft Skills: <br></br>
+          <u>Soft Skills:</u> <br></br>
           Leadership, adaptability, fast-learning, team-work oriented.
         </div>
+        
       </div>
     </div>
     </>)
