@@ -203,10 +203,6 @@ hr{
   }
 }
 @media (max-width: 500px) {
-  /* #navbar, #navbar_dark{
-    bottom: 0!important;
-    top: initial;
-  } */
   #myname{
     font-size: 25px;
     text-align: center;
@@ -232,17 +228,22 @@ hr{
   }
   .link-in{
     padding: 5px;
-    content: url("./assets/LI-In-Bug.png");
+    content: url("./assets/li.png");
     width: 50px;
   }
   .link-in-dark{
     padding: 5px;
-    content: url("./assets/LI-In-Bug.png");
+    content: url("./assets/li.png");
     width: 50px;
   }
   .link-res{
     padding: 5px;
     content: url("./assets/resume-svgrepo-com.svg");
+    width: 50px;
+  }
+  .link-res:hover{
+    content: url("./assets/resume-svgrepo-com.svg");
+    filter: brightness(1) invert(0);
     width: 50px;
   }
   .link-res-dark{
