@@ -8,17 +8,20 @@ function MyInfo({mode}){
             <h3 id="myname">Polina Mejia</h3>
             <hr></hr>
             <h4>Hello 👋</h4>
-            <p>I am a Junior Software Engineer with a passion in full-stack and mobile development. I am currently a student at California State University, Monterey Bay and I have an experience wirking as a Teachers 
-              Assistant at a coding bootcamp Code Platoon.
+            <p>I am a Junior Software Developer with a passion in full-stack and mobile development. I am currently a student at California State University, Monterey Bay, graduating August 2025. I am eager to secure an internship where I can contribute to a motivated team. With a foundation in Python, Java, and JavaScript, along with hands-on experience in full-stack development, I am looking for an opportunity to apply and enhance my knowledge in a real-world setting.
             </p>
             <h4>My Experience</h4>
-            <p>I learned to develop front-end, back-end, and full-stack applications during my intership at Code Platoon, a coding bootcamp that serves military personnel and military spouses. I worked as a Teacher's Assistant, and my main purpose was 
-              assisting students in their assignments, which meant I had to learn and adapt to the material fast in order to be a resourceful TA. 
+            <p>I learned to develop full-stack applications during my intership at Code Platoon, a coding bootcamp that serves veterans and military spouses. 
+              I worked as a Teacher's Assistant, and was responsible for a group of 5 people, ensuring their sucessful completion of assignments and tracking their progress in the bootcamp. 
+              In addition I had to learn and adapt to the material fast in order to be a resourceful TA. 
+
             <br></br>
             </p>
             <h4>Recent school project video (<a href="https://github.com/Poleron402/sb" target="_blank" className={mode?"link":"link_dark"}>ChillJava GitHub</a>)</h4>
             <iframe width="420" height="315" src="https://www.youtube.com/embed/Oz_JlrlvsZA"></iframe>
-            <h4>Recent personal project video (coming soon)</h4>
+            <p><b>What I did:</b> This project incorporated the use of RoomDB in Android Studio. I learned how to manipulate database using Data Access Object (DAO), how to use intent, and a little bit of shared preferences.<br>
+            </br><b style={{color: "#FF0000"}}>What I want to do:</b> This was a a school project and we where demonstrated how to run everything on the main thread, which caused issues for the UI in the long run. I had to look up how to run it differently without complete understanding how the process works. My future plans for this project is to refactor it to not run most database processes on the main thread.</p>
+            <h4>Recent full-stack project (<a href="https://github.com/Poleron402/Chudovo" target="_blank" className={mode?"link":"link_dark"}>Chudovo GitHub</a>)</h4>
             
         </div>
       </div>
