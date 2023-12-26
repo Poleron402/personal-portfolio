@@ -1,7 +1,6 @@
-import { useEffect } from 'react'
 import dark from '../assets/dark.svg'
 import light from '../assets/light.svg'
-function Navbar({mode, setMode, onClickHandler}){
+function Navbar({mode, onClickHandler}){
     
     
 
@@ -12,7 +11,7 @@ function Navbar({mode, setMode, onClickHandler}){
     </button>   
         <a href="https://www.linkedin.com/in/polina-mejia-432080284/" target="_blank" className={mode?"link link-in":"link_dark link-in-dark"}>LinkedIN</a>
         <a className={mode?"link link-gh":"link_dark link-gh-dark"} href="#">GitHub</a>
-        <a className={mode?"link link-res":"link_dark link-res-dark"} href="#">Resume</a>
+        <a className={mode?"link link-res":"link_dark link-res-dark"} href="file:///Users/polinaperon/Downloads/PolinaMejiaResume.pdf">Resume</a>
     </div>
     </>)
 }

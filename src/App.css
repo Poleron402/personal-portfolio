@@ -4,6 +4,11 @@ html, body{
   height: 100%;
   font-family: 'Space Mono';
 }
+:root {
+  --primary-color: rgb(44, 48, 66);
+  --primary-dark-color: whitesmoke;
+
+}
 
 #myLinked_dark{
   background-color: rgb(76, 84, 114);
@@ -228,7 +233,6 @@ hr{
   .link-gh:hover{
     padding: 5px;
     content: url("./assets/github-mark-white.svg");
-    /* background-color: rgb(44, 48, 66); */
   }
   .link-in{
     padding: 5px;
