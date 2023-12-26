@@ -115,7 +115,7 @@ html, body{
   position: relative;
   background-color: rgb(44, 48, 66);
   color: whitesmoke;
-  padding: 10px;
+
 }
 hr{
   margin-top: -20px;
@@ -123,6 +123,8 @@ hr{
 #cover_photo{
   width: 100%;
   height: 200px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
   background-image: url('https://i.pinimg.com/550x/75/35/52/7535521b032ec739aae3f44e0b3ef38c.jpg');
 }
 #profile_photo{
