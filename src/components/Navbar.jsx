@@ -11,7 +11,7 @@ function Navbar({mode, onClickHandler}){
     </button>   
         <a href="https://www.linkedin.com/in/polina-mejia-432080284/" target="_blank" className={mode?"link link-in":"link_dark link-in-dark"}>LinkedIN</a>
         <a className={mode?"link link-gh":"link_dark link-gh-dark"} href="#">GitHub</a>
-        <a className={mode?"link link-res":"link_dark link-res-dark"} href="file:///Users/polinaperon/Downloads/PolinaMejiaResume.pdf">Resume</a>
+        <a target="_blank" className={mode?"link link-res":"link_dark link-res-dark"} href="https://docs.google.com/document/d/e/2PACX-1vTDE-avfRJoKDRk3SlGC_7wHPODWgyb_IPCe_jTh6wxRwz-sD6EnQLt8TxguCw_B0FyeiGrqjTaffsw/pub">Resume</a>
     </div>
     </>)
 }

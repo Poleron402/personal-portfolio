@@ -4,6 +4,7 @@ html, body{
   height: 100%;
   font-family: 'Space Mono';
 }
+
 :root {
   --primary-color: rgb(44, 48, 66);
   --primary-dark-color: whitesmoke;
